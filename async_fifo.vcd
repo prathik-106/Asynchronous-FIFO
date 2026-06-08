@@ -1,0 +1,376 @@
+$date
+	Wed Feb 11 19:29:17 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module tb $end
+$var wire 1 ! wfull $end
+$var wire 1 " rempty $end
+$var wire 8 # rdata [7:0] $end
+$var parameter 32 $ ADDR_SIZE $end
+$var parameter 32 % DATA_WIDTH $end
+$var reg 1 & rclk $end
+$var reg 1 ' rinc $end
+$var reg 1 ( rrst_n $end
+$var reg 1 ) wclk $end
+$var reg 8 * wdata [7:0] $end
+$var reg 1 + winc $end
+$var reg 1 , wrst_n $end
+$scope module dut $end
+$var wire 1 & rclk $end
+$var wire 1 ' rinc $end
+$var wire 1 ( rrst_n $end
+$var wire 1 ) wclk $end
+$var wire 8 - wdata [7:0] $end
+$var wire 1 + winc $end
+$var wire 1 , wrst_n $end
+$var wire 5 . wptr [4:0] $end
+$var wire 1 ! wfull $end
+$var wire 4 / waddr [3:0] $end
+$var wire 5 0 w_rptr [4:0] $end
+$var wire 5 1 rptr [4:0] $end
+$var wire 1 " rempty $end
+$var wire 8 2 rdata [7:0] $end
+$var wire 4 3 raddr [3:0] $end
+$var wire 5 4 r_wptr [4:0] $end
+$var parameter 32 5 ADDR_SIZE $end
+$var parameter 32 6 DATA_WIDTH $end
+$scope module memory $end
+$var wire 8 7 rdata [7:0] $end
+$var wire 1 ) wclk $end
+$var wire 1 + wclk_en $end
+$var wire 8 8 wdata [7:0] $end
+$var wire 1 ! wfull $end
+$var wire 4 9 waddr [3:0] $end
+$var wire 4 : raddr [3:0] $end
+$var parameter 32 ; ADDR_SIZE $end
+$var parameter 32 < DATA_WIDTH $end
+$var parameter 36 = DEPTH $end
+$upscope $end
+$scope module read_handler $end
+$var wire 1 & rclk $end
+$var wire 5 > rgray_next [4:0] $end
+$var wire 1 ' rinc $end
+$var wire 1 ( rrst_n $end
+$var wire 5 ? rbin_next [4:0] $end
+$var wire 4 @ raddr [3:0] $end
+$var wire 5 A r_wptr [4:0] $end
+$var wire 1 B empty $end
+$var parameter 32 C ADDR_SIZE $end
+$var reg 5 D curr_rbin [4:0] $end
+$var reg 5 E r_ptr [4:0] $end
+$var reg 1 " rempty $end
+$upscope $end
+$scope module rptr_to_wclk $end
+$var wire 1 ) clk $end
+$var wire 5 F din [4:0] $end
+$var wire 1 , rst_n $end
+$var parameter 33 G SIZE $end
+$var reg 5 H dout [4:0] $end
+$var reg 5 I temp [4:0] $end
+$upscope $end
+$scope module wptr_to_rclk $end
+$var wire 1 & clk $end
+$var wire 1 ( rst_n $end
+$var wire 5 J din [4:0] $end
+$var parameter 33 K SIZE $end
+$var reg 5 L dout [4:0] $end
+$var reg 5 M temp [4:0] $end
+$upscope $end
+$scope module write_handler $end
+$var wire 5 N w_rptr [4:0] $end
+$var wire 1 ) wclk $end
+$var wire 5 O wgray_next [4:0] $end
+$var wire 1 + winc $end
+$var wire 1 , wrst_n $end
+$var wire 5 P wbin_next [4:0] $end
+$var wire 4 Q waddr [3:0] $end
+$var wire 1 R full $end
+$var parameter 32 S ADDR_SIZE $end
+$var reg 5 T wbin [4:0] $end
+$var reg 1 ! wfull $end
+$var reg 5 U wptr [4:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b100 S
+b101 K
+b101 G
+b100 C
+b10000 =
+b1000 <
+b100 ;
+b1000 6
+b100 5
+b1000 %
+b100 $
+$end
+#0
+$dumpvars
+b0 U
+b0 T
+0R
+b0 Q
+b0 P
+b0 O
+b0 N
+b0 M
+b0 L
+b0 J
+b0 I
+b0 H
+b0 F
+b0 E
+b0 D
+1B
+b0 A
+b0 @
+b0 ?
+b0 >
+b0 :
+b0 9
+b0 8
+bx 7
+b0 4
+b0 3
+bx 2
+b0 1
+b0 0
+b0 /
+b0 .
+b0 -
+0,
+0+
+b0 *
+0)
+0(
+0'
+0&
+bx #
+1"
+0!
+$end
+#5
+1)
+#10
+0)
+1&
+#15
+1)
+#20
+0)
+0&
+#25
+1)
+#30
+0)
+1&
+#35
+1)
+#40
+1,
+1(
+0)
+0&
+#45
+1)
+#50
+b1 O
+b1 P
+1+
+b1111 *
+b1111 -
+b1111 8
+0)
+1&
+#55
+b1 /
+b1 9
+b1 Q
+b11 O
+b1111 #
+b1111 2
+b1111 7
+b1 .
+b1 J
+b1 U
+b10 P
+b1 T
+1)
+#60
+b1 *
+b1 -
+b1 8
+0)
+0&
+#65
+b10 /
+b10 9
+b10 Q
+b10 O
+b11 .
+b11 J
+b11 U
+b11 P
+b10 T
+1)
+#70
+b11 M
+b11 *
+b11 -
+b11 8
+0)
+1&
+#75
+b11 /
+b11 9
+b11 Q
+b110 O
+b10 .
+b10 J
+b10 U
+b100 P
+b11 T
+1)
+#80
+b10 O
+b11 P
+1'
+0+
+0)
+0&
+#85
+1)
+#90
+b10 M
+0B
+b11 0
+b11 A
+b11 L
+0)
+1&
+#95
+1)
+#100
+0)
+0&
+#105
+1)
+#110
+b1 >
+b1 ?
+b10 0
+b10 A
+b10 L
+0"
+0)
+1&
+#115
+1)
+#120
+0)
+0&
+#125
+1)
+#130
+0B
+b11 >
+b1 #
+b1 2
+b1 7
+b1 3
+b1 :
+b1 @
+b1 1
+b1 E
+b1 F
+b10 ?
+b1 D
+0)
+1&
+#135
+b1 I
+1)
+#140
+0)
+0&
+#145
+b1 4
+b1 H
+b1 N
+1)
+#150
+1B
+b10 >
+b11 #
+b11 2
+b11 7
+b10 3
+b10 :
+b10 @
+b11 1
+b11 E
+b11 F
+b11 ?
+b10 D
+0)
+1&
+#155
+b11 I
+1)
+#160
+0)
+0&
+#165
+b11 4
+b11 H
+b11 N
+1)
+#170
+1B
+b10 >
+bx #
+bx 2
+bx 7
+b11 3
+b11 :
+b11 @
+1"
+b10 1
+b10 E
+b10 F
+b11 ?
+b11 D
+0)
+1&
+#175
+b10 I
+1)
+#180
+0)
+0&
+#185
+b10 4
+b10 H
+b10 N
+1)
+#190
+0)
+1&
+#195
+1)
+#200
+0)
+0&
+#205
+1)
+#210
+0)
+1&
