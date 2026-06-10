@@ -54,7 +54,6 @@ module fifo #(
         .waddr(waddr),
         .raddr(raddr),
         .wclk_en(winc),
-        .wclk(wclk),
-        .wfull(wfull)
+        .wclk(wclk && !wfull),
     );
 endmodule
